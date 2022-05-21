@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d6f84275c9e1b118d23efda4b2f0834 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8d6f84275c9e1b118d23efda4b2f0834" ></div>
+        
+</body>
+<script>    
+    
+            var map_8d6f84275c9e1b118d23efda4b2f0834 = L.map(
+                "map_8d6f84275c9e1b118d23efda4b2f0834",
+                {
+                    center: [48.981864, 1.97459],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0192a11654a8ff1fe72cef0d59341f25 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+            ).addTo(map_8d6f84275c9e1b118d23efda4b2f0834);
+        
+    
+            var marker_fc5953167d99408d9b68d8b4d99fa109 = L.marker(
+                [48.981864, 1.97459],
+                {}
+            ).addTo(map_8d6f84275c9e1b118d23efda4b2f0834);
+        
+    
+            var icon_2178c5de19b6597518ba623f28eb1d21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc5953167d99408d9b68d8b4d99fa109.setIcon(icon_2178c5de19b6597518ba623f28eb1d21);
+        
+    
+        var popup_bd9b600aa3918f70b76a1b18bfe8a9a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edd4a3c152390697866213f3c9b02c95 = $(`<div id="html_edd4a3c152390697866213f3c9b02c95" style="width: 100.0%; height: 100.0%;">Lycée NDO</div>`)[0];
+            popup_bd9b600aa3918f70b76a1b18bfe8a9a1.setContent(html_edd4a3c152390697866213f3c9b02c95);
+        
+
+        marker_fc5953167d99408d9b68d8b4d99fa109.bindPopup(popup_bd9b600aa3918f70b76a1b18bfe8a9a1)
+        ;
+
+
+            var marker_667ebd33cc63c9ef5f8b8f710872751e = L.marker(
+                [48.980861, 1.975442],
+                {}
+            ).addTo(map_8d6f84275c9e1b118d23efda4b2f0834);
+        
+    
+            var icon_6a7112d18015d3da0ef2512bba1960b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_667ebd33cc63c9ef5f8b8f710872751e.setIcon(icon_6a7112d18015d3da0ef2512bba1960b5);
+            
+        
+    
+        var popup_f98adfbab1d4979411fb3390d8d60c0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dd39fd5172d2eadf0c45f8780d0f336 = $(`<div id="html_3dd39fd5172d2eadf0c45f8780d0f336" style="width: 100.0%; height: 100.0%;">Marius Burger</div>`)[0];
+            popup_f98adfbab1d4979411fb3390d8d60c0f.setContent(html_3dd39fd5172d2eadf0c45f8780d0f336);
+        
+
+        marker_667ebd33cc63c9ef5f8b8f710872751e.bindPopup(popup_f98adfbab1d4979411fb3390d8d60c0f)
+        ;
+
+        
+    
+</script>
